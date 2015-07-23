@@ -1,0 +1,129 @@
+<html>
+<head>
+
+<title>Go, Somil, Go!</title>
+<div id = "header">
+  
+  <a id = "title" href = "javascript:delay('index.html')">SomilGo</a>
+  
+  <a id = "contact" href = "javascript:delay('contact.html')" >Contact
+    <div id = "lit1"></div>
+  </a>
+  <a id = "about" href = "javascript:delay('about.html')">About
+    <div id = "lit2"></div>
+  </a>
+  <a id = "home" href = "javascript:delay('index.html')">Home
+    <div id = "lit3"></div>
+  </a>
+</div>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<link rel="stylesheet" type="text/css" href="total.css">
+<link rel="stylesheet" type="text/css" href="programpage.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="trans.js"></script>
+<link rel="stylesheet" type="text/css" href="tooltipster.css">
+<script type="text/javascript" src="jquery.tooltipster.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#buff').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Bounce Animation</b></br>This is just a little bouncing ball animation I made using the TI-Calculator.</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 520,
+      offsetY: 0,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#numb').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Number Guessing Game</b></br>This is a simple game in which the player tries to guess a number between two bounds that they choose. The game will tell the player whether their guess is higher or lower than the randomly generated number. In the end, the player will be told how many guesses it took them to guess the number. Check out my <a href='programs.html'>Python Programs</a> for a similar game.</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: -80,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#gpa').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Least Squares Regression Line</b></br>This is a program I made for my AP Statistics Class. It is able to calculate the slope and y-intercept of the Least Square Linear Regression Line of two sets of data given the means of both sets, the standard deviation of both sets, and the correlation coefficient of the graph.</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 0,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#fibo').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Infinite Adder</b></br>This is a fun little program that increases a starting number, which is chosen by the user, constantly by an increment also chosen by the user. If you pick a regular increment, this can be used as a timer of sorts or a test of your calculator's computing abilities. Also, picking irrational increments yields some interesting results.</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 50,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#ack').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Snake Game</b></br>My friend made this program but I thought it was interesting enough to share. It is a remix of the classic snake game. You are the snake in a field that is littered with rocks, and you cannot hit any rocks. However, as you move, you get longer and longer and you cannot hit yourself. See how long you can last; it even stores a high score based on the number of pixels you covered. </br><b>Requires: </b>Python 3 (for .py file) OR 64-bit system (for executable) (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 50,
+      arrow: false,
+  });
+});
+</script>
+</head>
+<body id = "programs">
+  
+	<div id = "main">
+    <div id="progtit">TI-BASIC Calculator Programs</div>
+    <div id ="thing">
+    <ul>
+      <a href="GUESS.8xp"><li id="numb">Number Guessing Game</li></a>
+      <a href="BOUNCE.8xp"><li id="buff">Bounce Animation</li></a>
+      <a href="LinReg.8xp"><li id ="gpa">Least Squares Regression Line</li></a>
+      <a href="ADD.8xp"><li id="fibo">Infinite Adder</li></a>
+      <a href="SNAKE.8xp"><li id="ack">Snake Game</li></a>
+    </ul>
+    </div>
+
+
+
+
+  </div>
+</body>
+
+
+</html>

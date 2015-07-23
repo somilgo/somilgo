@@ -1,0 +1,131 @@
+<html>
+<head>
+
+<title>Go, Somil, Go!</title>
+<div id = "header">
+  
+  <a id = "title" href = "javascript:delay('index.html')">SomilGo</a>
+  
+  <a id = "contact" href = "javascript:delay('contact.html')" >Contact
+    <div id = "lit1"></div>
+  </a>
+  <a id = "about" href = "javascript:delay('about.html')">About
+    <div id = "lit2"></div>
+  </a>
+  <a id = "home" href = "javascript:delay('index.html')">Home
+    <div id = "lit3"></div>
+  </a>
+</div>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<link rel="stylesheet" type="text/css" href="total.css">
+<link rel="stylesheet" type="text/css" href="programpage.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="trans.js"></script>
+<link rel="stylesheet" type="text/css" href="tooltipster.css">
+<script type="text/javascript" src="jquery.tooltipster.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('#buff').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Connect4 using MCTS</b></br>As a result of my research with Drexel Univsersity, I created this program in order to apply my knowledge of Monte Carlo Tree Search Algorithms in order to make an AI/CPU for the game Connect4. It works by sampling the complete game tree of the game state using the Monte Carlo Method, rather than excessively sampling the entire tree. Overall, I won four 1st prizes at four different science fairs and someone has yet to best my AI. Up to the challenge?</br>I included some of my research and data collection files as well.</br><b>Requires: </b> Java (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 520,
+      offsetY: -30,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#numb').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Tic Tac Toe</b></br>In order to try my hand at GUIs in Java using the Swing package, I created a simple Tic Tac Toe game with a graphical user interface. It works pretty smoothly with options of who to play first, beginning a new game, as well as a scoreboard.</br><b>Requires: </b>Java (.jar/.java) (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: -50,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#gpa').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Number Guessing Game</b></br>Similar to the programs I made in both TI BASIC and Python, this is a number guessing game that allows the user to select bounds in which the program generates a random number the user has to guess. The only clue is whether the user has to guess higher in their next guess or lower.</br><b>Requires: </b>Java (.jar) (Click button to download)</span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 0,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#fibo').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Assassin Matcher</b></br>I (along with a couple others) started a fundraiser at my high school which involved the elaborate water gun game, \"Assassin.\" In this game, teams of two \"assassins\" are assigned \"targets\" that belong to other teams to \"kill.\" I made this program to assign targets. Some of the conditions are that the targets cannot belong to the same team and their cannot be cases of reciprocal targets. Overall, this project raised almost $2000 for the American Cancer Society.</br><b>Requires: </b>Java (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 80,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#andr').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Number Guessing Game (Android)</b></br>My first android app! An android application version of the famous number guessing game. A number guessing game that allows the user to select bounds in which the program generates a random number the user has to guess. The only clue is whether the user has to guess higher in their next guess or lower.</br><b>Requires: </b>Android (.apk) (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 40,
+      arrow: false,
+  });
+});
+
+
+</script>
+</head>
+<body id = "programs">
+  
+	<div id = "main">
+    <div id="progtit">Java Programs & Android Apps</div>
+    <div id ="thing">
+    <ul>
+      <a href="tictactoejava.zip"><li id="numb">Tic Tac Toe</li></a>
+      <a href="Connect_Four_MCTS.zip"><li id="buff">Connect Four MCTS</li></a>
+      <a href="NumberGuesserGUI.jar"><li id ="gpa">Number Guessing Game</li></a>
+      <a href="Assassin.java" download = "Assassin.java"><li id="fibo">Assassin Matcher</li></a>
+      <a href="number_guesser.apk"><li id="andr">Number Guessing (Android)</li></a>
+    </ul>
+    </div>
+
+
+
+
+  </div>
+</body>
+
+
+</html>

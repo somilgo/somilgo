@@ -1,0 +1,434 @@
+html { 
+  background: -webkit-linear-gradient(#FFA347, #FFC299);
+  background: -o-linear-gradient(#FFA347, #FFC299);
+  background: -moz-linear-gradient(#FFA347, #FFC299);
+  background: linear-gradient(#FFA347, #FFC299);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 1;
+  height: auto;
+
+}
+
+head {
+
+  
+}
+
+@font-face {
+    font-family: 'somilgo';
+    src: url('papa-webfont.eot');
+    src: url('papa-webfont.eot?#iefix') format('embedded-opentype'),
+         url('papa-webfont.woff') format('woff'),
+         url('papa-webfont.ttf') format('truetype'),
+         url('papa-webfont.svg#dimitri_swankregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'orangebackup';
+    src: url('orange-webfont.eot');
+    src: url('orange-webfont.eot?#iefix') format('embedded-opentype'),
+         url('orange-webfont.woff') format('woff'),
+         url('orange-webfont.ttf') format('truetype'),
+         url('orange-webfont.svg#agent_orangeregular') format('svg');
+    
+
+}
+
+@font-face {
+    font-family: 'orange';
+    src: url('firasans-bold-webfont.eot');
+    src: url('firasans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('firasans-bold-webfont.woff') format('woff'),
+         url('firasans-bold-webfont.ttf') format('truetype'),
+         url('firasans-bold-webfont.svg#fira_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ambler';
+    src: url('amble-regular-webfont.eot');
+    src: url('amble-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('amble-regular-webfont.woff') format('woff'),
+         url('amble-regular-webfont.ttf') format('truetype'),
+         url('amble-regular-webfont.svg#ambleregular') format('svg');
+    
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v9/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v9/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'amblebo';
+    src: url('amble-bold-webfont.eot');
+    src: url('amble-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('amble-bold-webfont.woff') format('woff'),
+         url('amble-bold-webfont.ttf') format('truetype'),
+         url('amble-bold-webfont.svg#amblebold') format('svg');
+    
+
+}
+
+#header {
+
+  background: rgb(255,197,120); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,197,120,1) 0%, rgba(255,140,63,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,197,120,1)), color-stop(100%,rgba(255,140,63,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,197,120,1) 0%,rgba(255,140,63,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,197,120,1) 0%,rgba(255,140,63,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,197,120,1) 0%,rgba(255,140,63,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,197,120,1) 0%,rgba(255,140,63,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc578', endColorstr='#ff8c3f',GradientType=0 ); /* IE6-9 */
+
+  box-shadow: 0 0 10px;
+  height: 100px;
+  width: 100%;
+  min-width: 1230px;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+#title {
+
+  position:relative;
+  margin: 40px 0px 20px 100px;
+  top: 20px;
+  width: 200px;
+  height: 50px;
+  text-shadow: 2px 2px gray;
+  
+
+}
+
+a#title {
+  font-family: somilgo;
+  color:white;
+  
+  font-size: 350%;
+  
+  -webkit-transition: text-shadow 500ms ease-out;
+  -moz-transition: text-shadow 500ms ease-out;
+  -ms-transition: text-shadow 500ms ease-out;
+  -o-transition: text-shadow 500ms ease-out;
+  transition: text-shadow 500ms ease-out;
+
+}
+
+a#title:link {
+    text-decoration: none;
+    color: white;
+}
+
+a#title:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a#title:hover {
+    text-decoration: none;
+    color:white;
+    text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+    -webkit-animation-name: nap;
+  -webkit-animation-duration: 0.4s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+
+}
+
+@-webkit-keyframes nap {
+  0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+  10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+  30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+  40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+  50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+  70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+  80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+  90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+  100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+a#title:active {
+    text-decoration: none;
+    color:white;
+}
+
+a{
+
+  text-decoration: none
+}
+
+#contact {
+
+  position:absolute;
+  text-align: center;
+  float:right;
+  left: 1100px;
+  top: 30px;
+  color: white;
+  font-family: 'ambler';
+  font-size: 30px;
+  text-shadow: 1px 1px 8px rgba(0,0,0,.4);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+
+}
+
+
+#about {
+
+  position:absolute;
+  text-align: center;
+  float:right;
+  left: 950px;
+  top: 30px;
+  color: white;
+  font-family: 'ambler';
+  font-size: 30px;
+  text-shadow: 1px 1px 8px rgba(0,0,0,.4);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+
+}
+
+#home {
+
+  position:absolute;
+  text-align: center;
+  float:right;
+  left: 800px;
+  top: 30px;
+  color:white;
+  font-family: 'ambler';
+  font-size: 30px;
+  text-shadow: 1px 1px 8px rgba(0,0,0,.4);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+
+
+}
+
+#lit3 {
+
+  background: rgb(255,111,15); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,111,15,1) 0%, rgba(224,172,94,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,111,15,1)), color-stop(100%,rgba(224,172,94,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6f0f', endColorstr='#e0ac5e',GradientType=0 ); /* IE6-9 */
+-webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+
+
+  box-shadow: inset 0 0 5px rgba(0,0,0,.5);
+
+  
+  height: 10px;
+  width: 40px;
+  margin: 10px auto;
+
+}
+
+#home:hover {
+
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+
+}
+
+#about:hover {
+
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+
+}
+
+#contact:hover {
+
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+
+}
+
+#home:hover > #lit3 {
+
+  background: white;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2), inset -1px 1px 5px #ffc, -1px 1px 15px #ffc, 1px -1px 15px #fff;
+}
+
+body#house #lit3, body#aboot #lit2, body#contax #lit1 {
+
+  background: white;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2), inset -1px 1px 5px #ffc, -1px 1px 15px #ffc, 1px -1px 15px #fff;
+
+
+}
+
+
+#lit2 {
+
+  background: rgb(255,111,15); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,111,15,1) 0%, rgba(224,172,94,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,111,15,1)), color-stop(100%,rgba(224,172,94,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6f0f', endColorstr='#e0ac5e',GradientType=0 ); /* IE6-9 */
+-webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+
+
+  box-shadow: inset 0 0 5px rgba(0,0,0,.5);
+
+  
+  height: 10px;
+  width: 40px;
+  margin: 10px auto;
+
+}
+
+#about:hover > #lit2 {
+
+  background: white;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2), inset -1px 1px 5px #ffc, -1px 1px 15px #ffc, 1px -1px 15px #fff;
+}
+
+
+#lit1 {
+
+  background: rgb(255,111,15); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,111,15,1) 0%, rgba(224,172,94,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,111,15,1)), color-stop(100%,rgba(224,172,94,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,111,15,1) 0%,rgba(224,172,94,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6f0f', endColorstr='#e0ac5e',GradientType=0 ); /* IE6-9 */
+-webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+
+
+  box-shadow: inset 0 0 5px rgba(0,0,0,.5);
+
+  
+  height: 10px;
+  width: 40px;
+  margin: 10px auto;
+
+}
+
+#contact:hover > #lit1 {
+
+  background: white;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.2), inset -1px 1px 5px #ffc, -1px 1px 15px #ffc, 1px -1px 15px #fff;
+}
+
+ 
+
+
+
+body {
+
+  margin: 0;
+  
+}
+
+/* Webkit Scrollbar */
+::-webkit-scrollbar {
+width: 20px;
+
+}
+::-webkit-scrollbar-track {
+background: #FFFFFF;
+-webkit-box-shadow: inset 0px 0px 8px #E0E0E0;   
+border: 1px solid #D8D8D8;
+}
+::-webkit-scrollbar-thumb {
+background: #ff8c3f;
+-webkit-box-shadow: inset 1px 1px 2px rgba(155, 155, 155, 0.4);  
+
+}
+::-webkit-scrollbar-thumb:hover {
+background: #fca164;
+-webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.8);
+}
+::-webkit-scrollbar-thumb:active {
+background: #fca164;
+-webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.8);
+}
+
+
+
+
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 1100px) {
+#header {
+  width:1230px;
+  height: 200px;
+
+}
+
+a#title {
+
+  top: 50px;
+  right: 20px;
+  font-size: 700%;
+
+}
+
+#contact, #about, #home {
+
+  top: 80px;
+  font-size: 60px;
+  
+
+}
+
+#home {
+
+  left: 600px;
+}
+#about{
+  left: 800px;
+}
+#contact{
+  left:1000px;
+}
+
+
+
+}

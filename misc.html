@@ -1,0 +1,84 @@
+<html>
+<head>
+
+<title>Go, Somil, Go!</title>
+<div id = "header">
+  
+  <a id = "title" href = "javascript:delayt('index.html')">SomilGo</a>
+  
+  <a id = "contact" href = "javascript:delayt('contact.html')" >Contact
+    <div id = "lit1"></div>
+  </a>
+  <a id = "about" href = "javascript:delayt('about.html')">About
+    <div id = "lit2"></div>
+  </a>
+  <a id = "home" href = "javascript:delayt('index.html')">Home
+    <div id = "lit3"></div>
+  </a>
+</div>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<link rel="stylesheet" type="text/css" href="total.css">
+<link rel="stylesheet" type="text/css" href="misc.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="trans2.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.gridster.min.css">
+<script type="text/javascript" src="jquery.gridster.min.js"></script>
+<script>
+
+var gridster;
+
+      $(function(){
+
+        gridster = $(".gridster ul").gridster({
+          widget_base_dimensions: [140, 140],
+          widget_margins: [10, 10],
+          draggable: {
+            handle: 'header'
+          }
+        }).data('gridster');
+
+      });
+
+</script>
+</head>
+  <div id = "main">
+    
+    <div class="gridster">
+    <ul>
+        <li data-row="1" data-col="1" data-sizex="1" data-sizey="2"><header>Grab Me!</header><a id = 'calcj' href="javascript:delayt('calcprog.html')"><img id ='calcp' src='calcimg.png'><div class ='des'><span id='pac' STYLE="font-size: 18pt">TI-BASIC Calculator Programs</li>
+        
+        <li data-row="3" data-col="1" data-sizex="1" data-sizey="1"><header>Grab Me!</header><a href='http://www.twitter.com/SomilGo'><img id='door' src = 'twit.png'><div id='chk'><span id='wac' STYLE="font-size: 18pt"></br>My Twitter</span></div></a></li>
+ 
+        <li data-row="1" data-col="2" data-sizex="2" data-sizey="1"><header>Grab Me!</header><a href='Algorithmic Composition.zip'><img id='pel' src = 'algoco.png'><div id='chk'><span id='wac' STYLE="font-size: 18pt">Algorithmic Composition with Pure Data</span></div></a></li>
+        <li data-row="2" data-col="2" data-sizex="2" data-sizey="2"><header>Grab Me!</header><a href='http://www.applocity.blogspot.com'><img id='app' src='applocitylogo.png'><div class ='des'><span id='pac' STYLE="font-size: 25pt">Check out my blog: </br> Applocity!</span></div></a></li>
+ 
+        <li data-row="1" data-col="4" data-sizex="2" data-sizey="2"><header>Grab Me!</header><a href='The Maze.pptx'><img id ='maze' src='mazepic.png'><div class ='des'><span id='pac' STYLE="font-size: 18pt">Check out my "Maze Game", an interactive PowerPoint adventure! </br>(Still in the works)</span></div></a></li>
+        
+        <li data-row="3" data-col="4" data-sizex="2" data-sizey="1"><header>Grab Me!</header></li>
+ 
+  
+        <li data-row="1" data-col="6" data-sizex="1" data-sizey="1"><header>Grab Me!</header></li>
+        <li data-row="2" data-col="6" data-sizex="1" data-sizey="2"><header>Grab Me!</header></li>
+    </ul>
+</div>
+
+
+
+
+  </div>
+</body>

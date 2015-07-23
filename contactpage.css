@@ -1,0 +1,195 @@
+#main {
+  width: 1230px;
+  height: auto;
+  margin: 0px auto 20px;
+  background: white;
+  -moz-box-shadow: 0 0 20px black; 
+  -webkit-box-shadow: 0 0 20px black;
+  -o-box-shadow: 0 0 20px black; 
+  box-shadow: 0 0px 20px;
+  z-index: 9;
+  position:relative;
+  opacity: .85;
+  overflow: hidden;
+
+-webkit-animation: swip 1.5s;
+  animation: swip 1.5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes swip {
+    from {bottom: 100%;}
+    to {bottom: 0px;}
+}
+
+/* Standard syntax */
+@keyframes swip {
+    from {bottom: 100%;}
+    to {bottom: 0px;}
+}
+
+#main.active {
+
+-webkit-animation: tip 1.5s;
+  animation: tip 1.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes tip {
+    from {bottom: 0px;}
+    to {bottom: 100%;}
+}
+
+/* Standard syntax */
+@keyframes tip {
+    from {bottom: 0px;}
+    to {bottom: 100%;}
+}
+
+#contact-area {
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#contact-area input, #contact-area textarea {
+  padding: 5px;
+  width: 471px;
+  font-family: "ambler";
+  font-size: 1.4em;
+  margin: 0px 0px 20px 0px;
+  border: 2px solid #ccc;
+}
+
+
+
+#contact-area textarea:focus, #Name:focus, #Email:focus, #Subject:focus, #Message:focus {
+  border: 2px solid #ff6c0a;
+  box-shadow: 0 0 30px orange;
+}
+
+
+
+
+
+
+#contact-area button.submit-button {
+  width: 100px;
+  float: right;
+  margin-right: 25px;
+  height: 50px;
+  font-family: ambler;
+  font-size: 18pt;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-color: #e57a32;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.submit-button:hover {
+
+  background: #ff9c51;
+}
+
+
+
+
+label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 100px;
+  padding-top: 5px;
+  font-size: 1.4em;
+  font-family: "amblebo";
+}
+
+textarea {
+
+  width: 470px;
+  height: 100px;
+  max-width: 470px;
+  overflow: auto;
+  
+}
+
+#talk {
+  font-family: "orange";
+  text-align: center;
+  font-size: 45pt;
+  margin: 20px auto;
+}
+
+
+
+input:focus::-webkit-input-placeholder {
+  transition: text-indent 1s .1s ease-in-out; 
+  text-indent: -100%;
+  opacity: 1;
+}
+
+
+
+textarea:focus placeholder {
+  transition: text-indent 1s .1s ease-in-out; 
+  text-indent: -100%;
+  opacity: 1;
+}
+
+.submit-button {
+  border-radius: 5%;
+  background: #ffbf8e;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+  
+}
+
+#lakk {
+  
+  outline: none;
+}
+
+#lakk:focus{
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, .8);
+  background: #f9a463;
+  outline:none;
+
+}
+
+#success {
+
+  font-family: "orange";
+  font-size: 40pt;
+  text-align: center;
+  margin: 120px 100px;
+
+}
+a{
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  color:ff832b;
+}
+
+a:hover {
+
+  color:#ff9c51;
+
+}
+
+a:active {
+  color:#ff6702;
+}

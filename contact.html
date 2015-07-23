@@ -1,0 +1,238 @@
+<html>
+<head>
+
+
+<title>Go, Somil, Go! | Contact</title>
+<div id = "header">
+  
+  <a id = "title" href = "javascript:delay('index.html')">SomilGo</a>
+  
+  <a id = "contact" href = "javascript:delay('contact.html')" >Contact
+    <div id = "lit1"></div>
+  </a>
+  <a id = "about" href = "javascript:delay('about.html')">About
+    <div id = "lit2"></div>
+  </a>
+  <a id = "home" href = "javascript:delay('index.html')">Home
+    <div id = "lit3"></div>
+  </a>
+</div>
+
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<link rel="stylesheet" type="text/css" href="total.css">
+<link rel="stylesheet" type="text/css" href="contactpage.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="trans.js"></script>
+
+
+</head>
+<body id = "contax">
+<div id = "main">
+
+<?php
+
+$nameErr = "Nice to meet you.";
+$messageErr = "Blah. Blah. Blah";
+$emailErr = "I'll get back to you.";
+
+if ($_SERVER['REQUEST_METHOD']== "POST") {
+   $valid = true; //Your indicator for your condition, actually it depends on what you need. I am just used to this method.
+
+   if (empty($_POST["Name"])) {
+      $nameErr = "Fill me in!";
+      $swolo = "red";
+      $valid = false; //false
+
+   }
+
+   else {
+
+      $shirt = $_POST["Name"];
+
+     }
+   
+   if (empty($_POST["Email"])) {
+      $emailErr = "Fill me in!";
+      $bolo = "red";
+      $valid = false;
+   } 
+   elseif (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$_POST["Email"])) {
+      $emailErr = "Invalid email format";
+      $bolo = "red";
+      $valid = false;
+    }
+     else {
+
+      $dirt = $_POST["Email"];
+
+     }
+
+   if (empty($_POST["Message"])) {
+      $messageErr = "Don't be shy!";
+      $dolo = "red";
+      $valid = false;
+   }
+
+   else {
+
+      $flirt = $_POST["Message"];
+
+     }
+   
+
+  //if valid then redirect
+  if($valid){
+   $EmailFrom = "somilgo@somilgo.com";
+$EmailTo = "somilgovani@gmail.com";
+$Subject = Trim(stripslashes($_POST['Subject']));
+$Name = Trim(stripslashes($_POST['Name'])); 
+
+$Email = Trim(stripslashes($_POST['Email'])); 
+$Message = Trim(stripslashes($_POST['Message'])); 
+
+// prepare email body text
+$Body = "";
+$Body .= "Name: ";
+$Body .= $Name;
+$Body .= "\n";
+$Body .= "Subject: ";
+$Body .= $Subject;
+$Body .= "\n";
+$Body .= "Email: ";
+$Body .= $Email;
+$Body .= "\n";
+$Body .= "Message: ";
+$Body .= $Message;
+$Body .= "\n";
+
+// send email 
+$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+
+// redirect to success page 
+if ($success){
+  print "<meta http-equiv=\"refresh\" content=\"2;URL=contactthanks.html\">";
+}
+else{
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
+}
+   exit();
+  }
+}
+?>
+
+<style>
+#Email::-webkit-input-placeholder {
+   color:  <?php echo $bolo; ?>;
+}
+
+#Email:-moz-placeholder { /* Firefox 18- */
+   color: <?php echo $bolo; ?>; 
+}
+
+#Email::-moz-placeholder {  /* Firefox 19+ */
+   color: <?php echo $bolo; ?>;  
+}
+
+#Email:-ms-input-placeholder {  
+   color: <?php echo $bolo; ?>;  
+
+}
+
+#Name::-webkit-input-placeholder {
+   color:  <?php echo $swolo; ?>;
+}
+
+#Name:-moz-placeholder { /* Firefox 18- */
+   color: <?php echo $swolo; ?>; 
+}
+
+#Name::-moz-placeholder {  /* Firefox 19+ */
+   color: <?php echo $swolo; ?>;  
+}
+
+#Name:-ms-input-placeholder {  
+   color: <?php echo $swolo; ?>;  
+ }
+
+ #Message::-webkit-input-placeholder {
+   color:  <?php echo $dolo; ?>;
+}
+
+#Message:-moz-placeholder { /* Firefox 18- */
+   color: <?php echo $dolo; ?>; 
+}
+
+#Message::-moz-placeholder {  /* Firefox 19+ */
+   color: <?php echo $dolo; ?>;  
+}
+
+#Message:-ms-input-placeholder {  
+   color: <?php echo $dolo; ?>;  
+
+ }
+
+#contact-area textarea{
+  border-color: <?php echo $dolo; ?>;  
+  
+}
+
+#contact-area #Name{
+  border-color: <?php echo $swolo; ?>;  
+  
+}
+
+#contact-area #Email{
+  border-color: <?php echo $bolo; ?>;  
+}
+
+
+
+</style>
+
+
+<div id="contact-area">
+      <div id = "talk">Talk to me.</div>
+    
+      <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+        
+        <label for="Name">*Name:</label>
+        <input type="text" name="Name" id="Name" placeholder="<?php echo $nameErr;?>" value = "<?php echo $shirt; ?>"  />
+        </br>
+        <label for="Subject">Subject:</label>
+        <input type="text" name="Subject" id="Subject" placeholder="Math? English? Science?" />
+        </br>
+        <label for="Email">*Email:</label><span class="error"> 
+        <input type="text" name="Email" id="Email" placeholder="<?php echo $emailErr;?>" value = "<?php echo $dirt; ?>"  />
+        </br>
+        
+        <label for="Message">*Message:</label>
+        <textarea name="Message" id="Message" placeholder="<?php echo $messageErr?>"><?php echo $flirt; ?></textarea>
+        
+        <button type="submit" id = "lakk" name="submit" value="Woosh." class="submit-button" />Woosh.</button>
+      </form>
+      
+      <div style="clear: both;"></div>
+      
+      
+    
+    </div>
+
+</div>
+</body>
+</html>

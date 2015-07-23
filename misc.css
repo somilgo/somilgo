@@ -1,0 +1,253 @@
+#main {
+  width: 1230px;
+  height: auto;
+  margin: 0px auto 10px;
+  background: white;
+  -moz-box-shadow: 0 0 20px black; 
+  -webkit-box-shadow: 0 0 20px black;
+  -o-box-shadow: 0 0 20px black; 
+  box-shadow: 0 0px 20px;
+  z-index: 9;
+  position:relative;
+  opacity: .85;
+  overflow: hidden;
+-webkit-animation: swip 1.5s;
+  animation: swip 1.5s;
+  
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes swip {
+    from {bottom: 100%;}
+    to {bottom: 0px;}
+}
+
+/* Standard syntax */
+@keyframes swip {
+    from {bottom: 100%;}
+    to {bottom: 0px;}
+}
+
+
+#main.active {
+
+-webkit-animation: tip 1.5s;
+  animation: tip 1.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes tip {
+    from {bottom: 0px;}
+    to {bottom: 100%;}
+}
+
+/* Standard syntax */
+@keyframes tip {
+    from {bottom: 0px;}
+    to {bottom: 100%;}
+}
+
+#progtit {
+
+  font-family: amblebo;
+  font-size: 40pt;
+  text-align: center;
+  padding: 20px;
+
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  background: #ffb889;
+  overflow: hidden;
+
+}
+
+
+
+.gridster {
+  
+  width: 90%;
+  margin: 20px auto;
+  left: 1%;
+  height: auto;
+
+}
+
+.gridster li header {
+        background: #fc9e5f;
+        display: block;
+        font-family: ambler;
+        color: #fc9e5f;
+        font-size: 20px;
+        height: 23px;
+        line-height: normal;
+        padding: 4px 0 6px ;
+        margin-bottom: 20px;
+        cursor: -webkit-grab; cursor: -moz-grab;
+        text-align: center;
+        -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+      }
+
+.gridster li header:hover {
+
+  background: #f28943;
+  color: black;
+
+
+}
+
+
+
+
+.gridster li header:active {
+
+  cursor: -webkit-grabbing; cursor: -moz-grabbing;
+  background: #e87a30;
+
+}
+
+#maze {
+
+  max-width:100%; max-height: 100%;
+}
+
+#calcp
+{
+   max-width:100%; max-height: 80%;
+   margin-top: -10px;
+   position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+
+#door {
+
+  max-width:100%; max-height: 100%;
+  position: relative;
+  bottom: 35px;
+}
+
+#app {
+
+  max-width:85%; max-height: 85%;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10px;
+  
+}
+
+.des {
+  width: 100%;
+  height: 89%;
+  opacity: 0;
+  font-family: ambler;
+  position: absolute;
+  top: 11%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.des:hover {
+  opacity: 1;
+  background-color: rgba(255,255, 255, 0.6);
+}
+
+.des:active {
+
+  background-color: rgba(255,255, 255, 0.8);
+}
+
+#pac {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display:inline-block; 
+  vertical-align:middle;
+  color: black;
+  opacity: 1; 
+  
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+
+}
+
+#pel {
+  position: relative;
+  bottom: 10px;
+  margin: 0 auto;
+
+}
+
+#chk {
+
+  width: 100%;
+  height: 76%;
+  opacity: 0;
+  font-family: ambler;
+  position: absolute;
+  top: 24.6%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+#chk:hover {
+  opacity: 1;
+  background-color: rgba(255,255, 255, 0.6);
+}
+
+#chk:active {
+
+  background-color: rgba(255,255, 255, 0.8);
+}
+
+#wac {
+
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display:inline-block; 
+  vertical-align:middle;
+  color: black;
+  opacity: 1; 
+  
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
