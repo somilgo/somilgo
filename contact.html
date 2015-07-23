@@ -122,7 +122,7 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
-$success = mail("somilgovani@gmail.com", "money", "motive");
+$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
 // redirect to success page 
 if ($success){
