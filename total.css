@@ -92,13 +92,12 @@ background: linear-gradient(to bottom,  rgba(255,197,120,1) 0%,rgba(255,140,63,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc578', endColorstr='#ff8c3f',GradientType=0 ); /* IE6-9 */
 
   box-shadow: 0 0 10px;
-  height: 100px;
+  height: 15%;
   width: 100%;
-  min-width: 1230px;
-  margin: auto;
+  
   position: relative;
   z-index: 10;
-  overflow: hidden;
+  
 }
 
 #title {
@@ -117,7 +116,7 @@ a#title {
   font-family: somilgo;
   color:white;
   
-  font-size: 350%;
+  font-size: 9vh;
   
   -webkit-transition: text-shadow 500ms ease-out;
   -moz-transition: text-shadow 500ms ease-out;
@@ -179,10 +178,10 @@ a{
   text-align: center;
   float:right;
   left: 1100px;
-  top: 30px;
+  top: 25%;
   color: white;
   font-family: 'ambler';
-  font-size: 30px;
+  font-size: 4.5vh;
   text-shadow: 1px 1px 8px rgba(0,0,0,.4);
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
@@ -199,10 +198,10 @@ a{
   text-align: center;
   float:right;
   left: 950px;
-  top: 30px;
+  top: 25%;
   color: white;
   font-family: 'ambler';
-  font-size: 30px;
+  font-size: 4.5vh;
   text-shadow: 1px 1px 8px rgba(0,0,0,.4);
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
@@ -218,10 +217,10 @@ a{
   text-align: center;
   float:right;
   left: 800px;
-  top: 30px;
+  top: 25%;
   color:white;
   font-family: 'ambler';
-  font-size: 30px;
+  font-size: 4.5vh;
   text-shadow: 1px 1px 8px rgba(0,0,0,.4);
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
