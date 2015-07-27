@@ -177,7 +177,7 @@ a{
   position:absolute;
   text-align: center;
   float:right;
-  left: 1100px;
+  left: 80%;
   top: 25%;
   color: white;
   font-family: 'ambler';
@@ -197,7 +197,7 @@ a{
   position:absolute;
   text-align: center;
   float:right;
-  left: 950px;
+  left: 70%;
   top: 25%;
   color: white;
   font-family: 'ambler';
@@ -216,7 +216,7 @@ a{
   position:absolute;
   text-align: center;
   float:right;
-  left: 800px;
+  left: 60%;
   top: 25%;
   color:white;
   font-family: 'ambler';
