@@ -362,13 +362,13 @@ img.app {
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes swip {
-    from {bottom: 500px;}
+    from {bottom: 100%;}
     to {bottom: 0px;}
 }
 
 /* Standard syntax */
 @keyframes swip {
-    from {bottom: 500px;}
+    from {bottom: 100%;}
     to {bottom: 0px;}
 }
 
@@ -383,13 +383,13 @@ img.app {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes tip {
     from {bottom: 0px;}
-    to {bottom: 640px;}
+    to {bottom: 100%;}
 }
 
 /* Standard syntax */
 @keyframes tip {
     from {bottom: 0px;}
-    to {bottom: 640px;}
+    to {bottom: 100%;}
 }
 
 

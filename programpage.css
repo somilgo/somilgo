@@ -1,5 +1,5 @@
 #main {
-  width: 1230px;
+  width: 85%;
   height: auto;
   margin: 0px auto 30px;
   background: white;
@@ -18,13 +18,13 @@
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes swip {
-    from {bottom: 850px;}
+    from {bottom: 100%;}
     to {bottom: 0px;}
 }
 
 /* Standard syntax */
 @keyframes swip {
-    from {bottom: 850px;}
+    from {bottom: 100%;}
     to {bottom: 0px;}
 }
 
@@ -39,13 +39,13 @@
 /* Chrome, Safari, Opera */
 @-webkit-keyframes tip {
     from {bottom: 0px;}
-    to {bottom: 850px;}
+    to {bottom: 100%;}
 }
 
 /* Standard syntax */
 @keyframes tip {
     from {bottom: 0px;}
-    to {bottom: 850px;}
+    to {bottom: 100%;}
 }
 
 ul {
