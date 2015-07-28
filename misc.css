@@ -51,7 +51,7 @@
 #progtit {
 
   font-family: amblebo;
-  font-size: 40pt;
+  font-size: 8vh;
   text-align: center;
   padding: 20px;
 
@@ -82,7 +82,7 @@ li {
         display: block;
         font-family: ambler;
         color: #fc9e5f;
-        font-size: 20px;
+        font-size: 3.4vh;
         height: 23px;
         line-height: normal;
         padding: 4px 0 6px ;
