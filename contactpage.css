@@ -62,7 +62,7 @@ form {
   padding: 5px;
   width: 471px;
   font-family: "ambler";
-  font-size: 1.4em;
+  font-size: 3.1vh;
   margin: 0px 0px 20px 0px;
   border: 2px solid #ccc;
 }
@@ -110,7 +110,7 @@ label {
   margin-right: 15px;
   width: 100px;
   padding-top: 5px;
-  font-size: 1.4em;
+  font-size: 3.1vh;
   font-family: "amblebo";
 }
 
@@ -126,7 +126,7 @@ textarea {
 #talk {
   font-family: "orange";
   text-align: center;
-  font-size: 45pt;
+  font-size: 8.3vh;
   margin: 20px auto;
 }
 
