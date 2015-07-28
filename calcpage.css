@@ -81,7 +81,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdeb5', end
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
   box-shadow: 0 0 10px black;
-  line-height: 30px;
+  line-height: 150%;
 }
 
 li:hover {
@@ -140,7 +140,7 @@ a {
 .dope .tooltipster-content {
   font-family: ambler;
   font-size: 2.3vh;
-  line-height: 25px;
+  line-height: 175%;
   padding: 8px 10px;
 }
 
