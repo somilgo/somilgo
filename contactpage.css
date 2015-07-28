@@ -48,22 +48,22 @@
 }
 
 #contact-area {
-  width: 100%;
+  width: auto;
   margin-top: 10px;
+  text-align: center;
 
 }
 
 form {
-  width: 50%;
-  margin: 0 auto;
+  display: inline-block;
 }
 
 #contact-area input, #contact-area textarea {
   padding: 5px;
-  width: 471px;
+  width: 60vh;
   font-family: "ambler";
   font-size: 3.1vh;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 5% 0px;
   border: 2px solid #ccc;
 }
 
@@ -80,12 +80,12 @@ form {
 
 
 #contact-area button.submit-button {
-  width: 100px;
+  width: 20%;
   float: right;
   margin-right: 25px;
-  height: 50px;
+  height: 8%;
   font-family: ambler;
-  font-size: 18pt;
+  font-size: 3.5vh;
   border-radius: 8px;
   margin-bottom: 20px;
   border-color: #e57a32;
@@ -106,19 +106,18 @@ form {
 
 label {
   float: left;
-  text-align: right;
-margin-right:0%;
-  width: 100px;
+  text-align: left;
+  margin-right:1em;
+  width: 6em;
   padding-top: 5px;
   font-size: 3.1vh;
   font-family: "amblebo";
+  
 }
 
 textarea {
 
-  width: 30%;
-  height: 20%;
-  max-width: 470px;
+
   overflow: auto;
   
 }
