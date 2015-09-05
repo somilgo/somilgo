@@ -131,12 +131,8 @@ $message->addTo($EmailTo)->
           setSubject($Subject)->
           setText($Body)->
 $response = $sendgrid->send($message);
-$success = TRUE;
-
-// redirect to success page 
-  print "<meta http-equiv=\"refresh\" content=\"2;URL=contactthanks.html\">";
-
-  }
+header("location: contactthanks.html");
+	}
 }
 ?>
 
