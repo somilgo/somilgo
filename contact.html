@@ -122,7 +122,16 @@ $Body .= $Message;
 $Body .= "\n";
 
 // send email 
-$success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
+require 'vendor/autoload.php';
+$sendgrid = new SendGrid('somilgo', 'tweeter11');
+
+$message = new SendGrid\Email();
+$message->addTo($EmailTo)->
+          setFrom($EmailFrom)->
+          setSubject($Subject)->
+          setText($Body)->
+$response = $sendgrid->send($message);
+$success = TRUE;
 
 // redirect to success page 
 if ($success){
