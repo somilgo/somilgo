@@ -129,7 +129,7 @@ $message = new SendGrid\Email();
 $message->addTo($EmailTo)->
           setFrom($EmailFrom)->
           setSubject($Subject)->
-          setText($Body)->
+          setText($Body);
 $response = $sendgrid->send($message);
 header("location: contactthanks.html");
 	}
@@ -209,7 +209,7 @@ header("location: contactthanks.html");
 <div id="contact-area">
       <div id = "talk">Talk to me.</div>
     
-      <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+      <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         
         <label for="Name">*Name:</label>
         <input type="text" name="Name" id="Name" placeholder="<?php echo $nameErr;?>" value = "<?php echo $shirt; ?>"  />
