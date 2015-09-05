@@ -117,7 +117,7 @@ label {
 
 textarea {
 
-
+  resize: vertical;
   overflow: auto;
   
 }

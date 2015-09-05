@@ -23,7 +23,7 @@
   font-family: 'ambler';
   vertical-align: middle;
   position: relative;
-  margin-top: 10px;
+  margin-top: 2%;
   top: 100%;
   opacity: 0;
   -webkit-transition: all 500ms ease-in-out;
@@ -78,7 +78,7 @@
   font-family: 'ambler';
   vertical-align: middle;
   position: relative;
-  margin-top: 10px;
+  margin-top: 2%;
   top: 100%;
   opacity: 0;
   -webkit-transition: all 500ms ease-in-out;
@@ -99,7 +99,7 @@
   font-family: 'ambler';
   vertical-align: middle;
   position: relative;
-  margin-top: 10px;
+  margin-top: 2%;
   top: 100%;
   opacity: 0;
   -webkit-transition: all 500ms ease-in-out;
@@ -117,7 +117,7 @@
   font-family: 'ambler';
   vertical-align: middle;
   position: relative;
-  margin-top: 0px;
+  margin-top: 2%;
   top: 100%;
   opacity: 0;
   -webkit-transition: all 500ms ease-in-out;
