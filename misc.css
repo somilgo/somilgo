@@ -147,6 +147,28 @@ li {
   bottom: 10px;
   
 }
+#talk {
+  font-family: "orange";
+  text-align: center;
+  font-size: 8.3vh;
+  margin: 20px auto;
+}
+
+#ga
+{
+  max-width:100%; max-height: 100%;
+
+}
+
+#git
+{
+  max-width:70%; max-height: 70%;
+  position: relative;
+  bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
 
 .des {
   width: 100%;
