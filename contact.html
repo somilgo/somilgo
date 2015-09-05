@@ -132,14 +132,9 @@ $message->addTo($EmailTo)->
           setText($Body)->
 $response = $sendgrid->send($message);
 $success = TRUE;
-
+header('Location: contactthanks.html');
 // redirect to success page 
-if ($success){
-  print "<meta http-equiv=\"refresh\" content=\"2;URL=contactthanks.html\">";
-}
-else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.htm\">";
-}
+
    exit();
   }
 }
