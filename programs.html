@@ -107,7 +107,7 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#tic').tooltipster({
       animation: 'grow',
-      content: $("<span><b>Tic Tac Toe Game</b></br>This is my take on the world famous 'Tic Tac Toe'. It includes a nice GUI to play with, as well as a home menu screen. The two player mode allows you to play with a friend on the same computer. You can also try your hand in one player mode, in which you play against the computer. I created an AI that moves directly after the player (the player always goes first). Good luck trying to beat it! </br><b>Requires: </b>Python 3 (for .py file) and tkinter module OR 64-bit system (for executable) (Click button to download) </span>"),
+      content: $("<span><b>Tic Tac Toe Game</b></br>This is my take on the world famous 'Tic Tac Toe'. It includes a nice GUI to play with, as well as a home menu screen. The two player mode allows you to play with a friend on the same computer. You can also try your hand in one player mode, in which you play against the computer. I created a minimax AI that moves directly after the player (the player always goes first). Good luck trying to beat it! </br><b>Requires: </b>Python 3 (for .py file) and tkinter module OR 64-bit system (for executable) (Click button to download) </span>"),
       position: 'right',
       theme: 'dope',
       interactive: true,
@@ -129,6 +129,19 @@ $(document).ready(function() {
       arrow: false,
   });
 });
+
+$(document).ready(function() {
+  $('#sirp').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Sierpinski's Triangle</b></br>The premise of is this puzzle is this: Randomly choose a point within an equilateral triangle. Randomly choose a vertex and find the midpoint between your point and the chosen vertex. The midpoint is your new point. Continue this process infinitely. What pattern emerges? I did this using Python and Matplotlib and found that this is the process to generate a fractal known as Sierpinski's Triangle. </br><b>Requires: </b>Python 3 (for .py file) and Matplotlib (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 90,
+      arrow: false,
+  });
+});
 </script>
 </head>
 <body id = "programs">
@@ -144,6 +157,7 @@ $(document).ready(function() {
       <a href="BuffonSim.zip"><li id="buff">Buffon's Needle Drop Simulator</li></a>
       <a href="Fibonacci.zip"><li id="fibo">Fibonacci Sequence</li></a>
       <a href="Ackermann.zip"><li id="ack">Ackermann Function</li></a>
+      <a href="triangle_puzzle.zip"><li id="sirp">Sierpinski's Triangle</li></a>
       
       
     </ul>
