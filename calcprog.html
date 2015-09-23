@@ -94,7 +94,33 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('#ack').tooltipster({
       animation: 'grow',
-      content: $("<span><b>Snake Game</b></br>My friend made this program but I thought it was interesting enough to share. It is a remix of the classic snake game. You are the snake in a field that is littered with rocks, and you cannot hit any rocks. However, as you move, you get longer and longer and you cannot hit yourself. See how long you can last; it even stores a high score based on the number of pixels you covered. </br><b>Requires: </b>Python 3 (for .py file) OR 64-bit system (for executable) (Click button to download) </span>"),
+      content: $("<span><b>Snake Game</b></br>My friend made this program but I thought it was interesting enough to share. It is a remix of the classic snake game. You are the snake in a field that is littered with rocks, and you cannot hit any rocks. However, as you move, you get longer and longer and you cannot hit yourself. See how long you can last; it even stores a high score based on the number of pixels you covered. </br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download)</span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 50,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#vecadd').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Vector Addition</b></br>This is a program I made that takes the magnitude and angle of two vectors and returns the resultant vector in unit vector notation and with its magnitude and angle. The input takes the angle as an absolute 360-degree angle, but returns it in relation to NE, NW, SE, SW distinguishable by the unit vector notation signs. </br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download)</span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 50,
+      arrow: false,
+  });
+});
+
+$(document).ready(function() {
+  $('#kin').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Kinematic Solver</b></br>Give at least 3 out of the 5 Kinematic Variables, this program will solve for the missing one or two variables using the Kinematic equations. The 5 Kinematic Variables are initial velocity (VO), final velocity (VF), Acceleration (A), Time (T), and Displacement (X).</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download)</span>"),
       position: 'right',
       theme: 'dope',
       interactive: true,
@@ -112,10 +138,12 @@ $(document).ready(function() {
     <div id ="thing">
     <ul>
       <a href="GUESS.8xp"><li id="numb">Number Guessing Game</li></a>
-      <a href="BOUNCE.8xp"><li id="buff">Bounce Animation</li></a>
+      <a href="Bounce.8xp"><li id="buff">Bounce Animation</li></a>
       <a href="LinReg.8xp"><li id ="gpa">Least Squares Regression Line</li></a>
       <a href="ADD.8xp"><li id="fibo">Infinite Adder</li></a>
       <a href="SNAKE.8xp"><li id="ack">Snake Game</li></a>
+      <a href="ADDVEC.8xp"><li id="vecadd">Vector Addition</li></a>
+      <a href="KIN.8xp"><li id="kin">Kinematic Equations</li></a>
     </ul>
     </div>
 
