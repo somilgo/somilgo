@@ -104,6 +104,19 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $('#emoji').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>The Emoji Game (Android)</b></br>How well do you know your emoji keyboard? Test your abilities with this game. By playing the Minute to Win It or 5 Emoji Challenge, see how quickly you can find your emojis in this addicting keyboard adventure.</br><b>Requires: </b>Android (.apk) (Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 40,
+      arrow: false,
+  });
+});
+
 
 </script>
 </head>
@@ -118,6 +131,7 @@ $(document).ready(function() {
       <a href="NumberGuesserGUI.jar"><li id ="gpa">Number Guessing Game</li></a>
       <a href="Assassin.java" download = "Assassin.java"><li id="fibo">Assassin Matcher</li></a>
       <a href="number_guesser.apk"><li id="andr">Number Guessing (Android)</li></a>
+      <a href="emojigame.apk"><li id="emoji">The Emoji Game</li></a>
     </ul>
     </div>
 
