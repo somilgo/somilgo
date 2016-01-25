@@ -173,10 +173,11 @@ a{
 }
 
 #contact {
-
-  position:absolute;
+margin:20px;
+  margin-bottom: 0;
   text-align: center;
   float:right;
+  padding-right: 10%;
   left: 80%;
   top: 25%;
   color: white;
@@ -194,7 +195,8 @@ a{
 
 #about {
 
-  position:absolute;
+  margin:20px;
+  margin-bottom: 0;
   text-align: center;
   float:right;
   left: 70%;
@@ -212,8 +214,8 @@ a{
 }
 
 #home {
-
-  position:absolute;
+  margin:20px;
+  margin-bottom: 0;
   text-align: center;
   float:right;
   left: 60%;
@@ -389,45 +391,85 @@ background: #fca164;
 -webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.8);
 }
 
+#mobMenu
+{
+  display:none;
+}
+
+@media only screen and (max-width : 800px) {
+  #contact, #home, #about{
+    display: none;
+  }
+
+  #mobMenu
+  {
+    display:block;
+    float:right;
+  }
+  #mobnav
+  {
+    height: 90%;
+    margin-right: 10px;
+  }
+
+  #mobMenu > ul
+  {
+    display: none;
+    position: absolute;
+    text-align: right;
+    list-style-type: none;
+    background-color: #ffcc80;
+    font-family: 'ambler';
+  }
+
+  #mobMenu:hover ul, ul:hover
+  {
+    display: block;
+  }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right:5%;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    font-family: 'ambler';
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
-
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 1100px) {
-#header {
-  width:1230px;
-  height: 200px;
 
 }
 
-a#title {
-
-  top: 50px;
-  right: 20px;
-  font-size: 700%;
-
-}
-
-#contact, #about, #home {
-
-  top: 80px;
-  font-size: 60px;
-  
+@media only screen and (max-height : 500px) {
+  #contact, #home, #about{
+    margin-top: 10px;
+  }
 
 }
 
-#home {
-
-  left: 600px;
-}
-#about{
-  left: 800px;
-}
-#contact{
-  left:1000px;
-}
 
 
-
-}

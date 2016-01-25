@@ -19,7 +19,7 @@
 #taco {
 
   text-align: center;
-  font-size: 4vh;
+  font-size: 2vw;
   font-family: 'ambler';
   vertical-align: middle;
   position: relative;
@@ -74,7 +74,7 @@
 #burr {
 
   text-align: center;
-  font-size: 4vh;
+  font-size: 2vw;
   font-family: 'ambler';
   vertical-align: middle;
   position: relative;
@@ -95,7 +95,7 @@
 #churr {
 
   text-align: center;
-  font-size: 3.5vh;
+  font-size: 2vw;
   font-family: 'ambler';
   vertical-align: middle;
   position: relative;
@@ -113,7 +113,7 @@
 #purr {
 
   text-align: center;
-  font-size: 3.5vh;
+  font-size: 2vw;
   font-family: 'ambler';
   vertical-align: middle;
   position: relative;
@@ -247,7 +247,7 @@
 
   font-family: 'orange';
   text-align: center;
-  font-size:10vh;
+  font-size:5vw;
   padding-top:30px;
 
 
@@ -393,9 +393,6 @@ img.app {
 }
 
 
-
-
-
 @media only screen and (min-device-width : 320px) and (max-device-width : 1100px) {
 
 
@@ -436,7 +433,6 @@ right:0%;
 
   opacity: 1;
   margin-top: 10px;
-  font-size:7vh;
 
 }
 

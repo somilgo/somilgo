@@ -11,7 +11,14 @@ $(function() {
   });
 });
 
-
+$(function() {
+  var main = $('#main');
+  var about = $('#moblink');
+  about.on('click', function(){
+    main.toggleClass('active');
+    
+  });
+});
 
 $(function() {
   var main = $('#main');
