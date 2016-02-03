@@ -470,6 +470,11 @@ background: #fca164;
     margin-top: 10px;
   }
 
+  li:hover
+  {
+    width:100%;
+  }
+
 }
 
 

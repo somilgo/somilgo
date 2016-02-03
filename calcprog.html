@@ -48,6 +48,7 @@
 <script type="text/javascript" src="jquery.tooltipster.min.js"></script>
 <script>
 $(document).ready(function() {
+    if ($(window).width() > 500) {
   $('#buff').tooltipster({
       animation: 'grow',
       content: $("<span><b>Bounce Animation</b></br>This is just a little bouncing ball animation I made using the TI-Calculator.</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download) </span>"),
@@ -136,6 +137,7 @@ $(document).ready(function() {
       offsetY: 50,
       arrow: false,
   });
+}
 });
 </script>
 </head>

@@ -48,6 +48,7 @@
 <script type="text/javascript" src="jquery.tooltipster.min.js"></script>
 <script>
 $(document).ready(function() {
+  if ($(window).width() > 500) {
   $('#buff').tooltipster({
       animation: 'grow',
       content: $("<span><b>Buffon's Needle Drop Simulator</b></br>Buffon's Needle Drop Problem was one of the first problems in geometrical probability to be solved. If you are unfamiliar with this problem, check out <a href='http://en.wikipedia.org/wiki/Buffon's_needle' target=blank>this page</a> or <a href = 'http://mathworld.wolfram.com/BuffonsNeedleProblem.html' target=blank>Wolfram Alpha</a>. The actual problem invovles a pretty interesting experiment as well as a compelling proof. However, the more intriguing part of it is that this experiment can be used in order to approximate pi. I made a program that simulates this experiment for a chosen number of times and for a chosen number of toothpicks of given length. After, the results of each trial is averaged for a pi approximation. It uses a random number generator and probability involved in this problem. I made this to accompany my final project in AP Statistics.</br><b>Requires: </b>Python 3 (for .py file) OR 64-bit system (for executable) (Click button to download) </span>"),
@@ -149,6 +150,7 @@ $(document).ready(function() {
       offsetY: 90,
       arrow: false,
   });
+}
 });
 </script>
 </head>

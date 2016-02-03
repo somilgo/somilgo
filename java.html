@@ -48,6 +48,7 @@
 <script type="text/javascript" src="jquery.tooltipster.min.js"></script>
 <script>
 $(document).ready(function() {
+  if ($(window).width() > 500) {
   $('#buff').tooltipster({
       animation: 'grow',
       content: $("<span><b>Connect4 using MCTS</b></br>As a result of my research with Drexel Univsersity, I created this program in order to apply my knowledge of Monte Carlo Tree Search Algorithms in order to make an AI/CPU for the game Connect4. It works by sampling the complete game tree of the game state using the Monte Carlo Method, rather than excessively sampling the entire tree. Overall, I won four 1st prizes at four different science fairs and someone has yet to best my AI. Up to the challenge?</br>I included some of my research and data collection files as well.</br><b>Requires: </b> Java (Click button to download) </span>"),
@@ -123,6 +124,7 @@ $(document).ready(function() {
       offsetY: 40,
       arrow: false,
   });
+}
 });
 
 
