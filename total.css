@@ -397,6 +397,7 @@ background: #fca164;
 }
 
 @media only screen and (max-width : 800px) {
+
   #contact, #home, #about{
     display: none;
   }
