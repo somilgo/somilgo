@@ -47,8 +47,13 @@
 <link rel="stylesheet" type="text/css" href="tooltipster.css">
 <script type="text/javascript" src="jquery.tooltipster.min.js"></script>
 <script>
-$(document).ready(function() {
-  if ($(window).width() > 499) {
+$(window).on('resize', update);
+
+$(document).ready(function(){update();});
+
+function update() {
+  if ($(window).width() > 1100) {
+
   $('#buff').tooltipster({
       animation: 'grow',
       content: $("<span><b>Buffon's Needle Drop Simulator</b></br>Buffon's Needle Drop Problem was one of the first problems in geometrical probability to be solved. If you are unfamiliar with this problem, check out <a href='http://en.wikipedia.org/wiki/Buffon's_needle' target=blank>this page</a> or <a href = 'http://mathworld.wolfram.com/BuffonsNeedleProblem.html' target=blank>Wolfram Alpha</a>. The actual problem invovles a pretty interesting experiment as well as a compelling proof. However, the more intriguing part of it is that this experiment can be used in order to approximate pi. I made a program that simulates this experiment for a chosen number of times and for a chosen number of toothpicks of given length. After, the results of each trial is averaged for a pi approximation. It uses a random number generator and probability involved in this problem. I made this to accompany my final project in AP Statistics.</br><b>Requires: </b>Python 3 (for .py file) OR 64-bit system (for executable) (Click button to download) </span>"),
@@ -59,9 +64,8 @@ $(document).ready(function() {
       offsetY: 100,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
   $('#numb').tooltipster({
       animation: 'grow',
       content: $("<span><b>Number Guessing Game</b></br> This is a simple game in which the player tries to guess a number between two bounds that they choose. The game will tell the player whether their guess is higher or lower than the randomly generated number. In the end, the player will be told how many guesses it took them to guess the number. </br><b>Requires: </b>Python 3 (for .py file) OR 64-bit system (for executable) (Click button to download) </span>"),
@@ -72,9 +76,9 @@ $(document).ready(function() {
       offsetY: -80,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#gpa').tooltipster({
       animation: 'grow',
       content: $("<span><b>Somi's GPA Calculator</b></br> This is a program that helps one calculate their marking period/semester GPA based on their grades in four classes. It has a user GUI so it doesn't require any interaction with the command prompt. This was made for other kids at my school as many are always confused on how to calculate their GPA. This is based on the 4.0 scale. In addition, custom weighting for AP, Honors, and Academic Classes can be set for a weighted version of the scale. It is also based off a block schedule so their are only four classes. I may add a method to add more classes at a later time. </br><b>Requires: </b>Python 3 (for .py file) OR 64-bit system (for executable) (Click button to download) </span>"),
@@ -85,9 +89,9 @@ $(document).ready(function() {
       offsetY: 0,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#fibo').tooltipster({
       animation: 'grow',
       content: $("<span><b>Fibonacci Sequence</b></br> This is a simple program that calculates values of the Fibonacci Sequence. The user gets to pick to which term the sequence calculates to, where the first term (0) is the 0th term. If you are unfamiliar with the Fibonacci Sequence, each new term is the sum of the previous two terms, where the first two terms are 0 and 1. Make sure you don't pick a term that is too high as it may take a lot of computing power.</br><b>Requires: </b>Python 3 (for .py file) OR 64-bit system (for executable) (Click button to download) </span>"),
@@ -98,9 +102,9 @@ $(document).ready(function() {
       offsetY: 50,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#ack').tooltipster({
       animation: 'grow',
       content: $("<span><b>Ackermann Function</b></br>This program is a Python version of the famous <a href='http://mathworld.wolfram.com/AckermannFunction.html'>Ackermann Function</a>. It illustrates the necessity of purely recursive functions. Make sure you don't pick a term that is too high as it may take a lot of computational power. </br><b>Requires: </b>Python 3 (for .py file) OR 64-bit system (for executable) (Click button to download) </span>"),
@@ -111,9 +115,9 @@ $(document).ready(function() {
       offsetY: 50,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#tic').tooltipster({
       animation: 'grow',
       content: $("<span><b>Tic Tac Toe Game</b></br>This is my take on the world famous 'Tic Tac Toe'. It includes a nice GUI to play with, as well as a home menu screen. The two player mode allows you to play with a friend on the same computer. You can also try your hand in one player mode, in which you play against the computer. I created a minimax AI that moves directly after the player (the player always goes first). Good luck trying to beat it! </br><b>Requires: </b>Python 3 (for .py file) and tkinter module OR 64-bit system (for executable) (Click button to download) </span>"),
@@ -124,9 +128,9 @@ $(document).ready(function() {
       offsetY: -75,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#fall').tooltipster({
       animation: 'grow',
       content: $("<span><b>Fall Down Game</b></br>This is my take on the famous game Fall Down. This is the first python script I ever wrote using the pygame module. It features working collision detection, a menu, highscore, movement with momentum, and more! It starts out slow and easy, but it gets progressively harder. Try your hand at this game; my personal high score is 1089 -- but I'm guessing you can beat that! </br><b>Requires: </b>Python 3 (for .py file) and pygame module OR 64-bit system (for executable) (Click button to download) </span>"),
@@ -137,9 +141,9 @@ $(document).ready(function() {
       offsetY: -90,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#sirp').tooltipster({
       animation: 'grow',
       content: $("<span><b>Sierpinski's Triangle</b></br>The premise of this puzzle is this: Randomly choose a point within an equilateral triangle. Randomly choose a vertex and find the midpoint between your point and the chosen vertex. The midpoint is your new point. Continue this process infinitely. What pattern emerges? I did this using Python and Matplotlib and found that this is the process to generate a fractal known as Sierpinski's Triangle. </br><b>Requires: </b>Python 2 (for .py file) and Matplotlib (Click button to download) </span>"),
@@ -151,7 +155,8 @@ $(document).ready(function() {
       arrow: false,
   });
 }
-});
+}
+
 </script>
 </head>
 <body id = "programs">

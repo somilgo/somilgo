@@ -47,8 +47,12 @@
 <link rel="stylesheet" type="text/css" href="tooltipster.css">
 <script type="text/javascript" src="jquery.tooltipster.min.js"></script>
 <script>
-$(document).ready(function() {
-  if ($(window).width() > 500) {
+$(window).on('resize', update);
+
+$(document).ready(function(){update();});
+
+function update() {
+  if ($(window).width() > 1100) {
   $('#buff').tooltipster({
       animation: 'grow',
       content: $("<span><b>Connect4 using MCTS</b></br>As a result of my research with Drexel Univsersity, I created this program in order to apply my knowledge of Monte Carlo Tree Search Algorithms in order to make an AI/CPU for the game Connect4. It works by sampling the complete game tree of the game state using the Monte Carlo Method, rather than excessively sampling the entire tree. Overall, I won four 1st prizes at four different science fairs and someone has yet to best my AI. Up to the challenge?</br>I included some of my research and data collection files as well.</br><b>Requires: </b> Java (Click button to download) </span>"),
@@ -59,9 +63,8 @@ $(document).ready(function() {
       offsetY: -30,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
   $('#numb').tooltipster({
       animation: 'grow',
       content: $("<span><b>Tic Tac Toe</b></br>In order to try my hand at GUIs in Java using the Swing package, I created a simple Tic Tac Toe game with a graphical user interface. It works pretty smoothly with options of who to play first, beginning a new game, as well as a scoreboard.</br><b>Requires: </b>Java (.jar/.java) (Click button to download) </span>"),
@@ -72,9 +75,9 @@ $(document).ready(function() {
       offsetY: -50,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#gpa').tooltipster({
       animation: 'grow',
       content: $("<span><b>Number Guessing Game</b></br>Similar to the programs I made in both TI BASIC and Python, this is a number guessing game that allows the user to select bounds in which the program generates a random number the user has to guess. The only clue is whether the user has to guess higher in their next guess or lower.</br><b>Requires: </b>Java (.jar) (Click button to download)</span>"),
@@ -85,9 +88,9 @@ $(document).ready(function() {
       offsetY: 0,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#fibo').tooltipster({
       animation: 'grow',
       content: $("<span><b>Assassin Matcher</b></br>I (along with a couple others) started a fundraiser at my high school which involved the elaborate water gun game, \"Assassin.\" In this game, teams of two \"assassins\" are assigned \"targets\" that belong to other teams to \"kill.\" I made this program to assign targets. Some of the conditions are that the targets cannot belong to the same team and their cannot be cases of reciprocal targets. Overall, this project raised almost $2000 for the American Cancer Society.</br><b>Requires: </b>Java (Click button to download) </span>"),
@@ -98,9 +101,9 @@ $(document).ready(function() {
       offsetY: 80,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#andr').tooltipster({
       animation: 'grow',
       content: $("<span><b>Number Guessing Game (Android)</b></br>My first android app! An android application version of the famous number guessing game. A number guessing game that allows the user to select bounds in which the program generates a random number the user has to guess. The only clue is whether the user has to guess higher in their next guess or lower.</br><b>Requires: </b>Android (.apk) (Click button to download) </span>"),
@@ -111,9 +114,8 @@ $(document).ready(function() {
       offsetY: 40,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
   $('#emoji').tooltipster({
       animation: 'grow',
       content: $("<span><b>The Emoji Game (Android)</b></br>How well do you know your emoji keyboard? Test your abilities with this game. By playing the Minute to Win It or 5 Emoji Challenge, see how quickly you can find your emojis in this addicting keyboard adventure.</br><b>Requires: </b>Android (.apk) (Click button to download) </span>"),
@@ -125,8 +127,7 @@ $(document).ready(function() {
       arrow: false,
   });
 }
-});
-
+}
 
 </script>
 </head>

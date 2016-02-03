@@ -47,8 +47,13 @@
 <link rel="stylesheet" type="text/css" href="tooltipster.css">
 <script type="text/javascript" src="jquery.tooltipster.min.js"></script>
 <script>
-$(document).ready(function() {
-    if ($(window).width() > 500) {
+$(window).on('resize', check);
+
+$(document).ready(function(){update();});
+
+function update() {
+  if ($(window).width() > 1100) {
+
   $('#buff').tooltipster({
       animation: 'grow',
       content: $("<span><b>Bounce Animation</b></br>This is just a little bouncing ball animation I made using the TI-Calculator.</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download) </span>"),
@@ -59,9 +64,8 @@ $(document).ready(function() {
       offsetY: 0,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
   $('#numb').tooltipster({
       animation: 'grow',
       content: $("<span><b>Number Guessing Game</b></br>This is a simple game in which the player tries to guess a number between two bounds that they choose. The game will tell the player whether their guess is higher or lower than the randomly generated number. In the end, the player will be told how many guesses it took them to guess the number. Check out my <a href='programs.html'>Python Programs</a> for a similar game.</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download) </span>"),
@@ -72,9 +76,8 @@ $(document).ready(function() {
       offsetY: -80,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
   $('#gpa').tooltipster({
       animation: 'grow',
       content: $("<span><b>Least Squares Regression Line</b></br>This is a program I made for my AP Statistics Class. It is able to calculate the slope and y-intercept of the Least Square Linear Regression Line of two sets of data given the means of both sets, the standard deviation of both sets, and the correlation coefficient of the graph.</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download) </span>"),
@@ -85,9 +88,8 @@ $(document).ready(function() {
       offsetY: 0,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
   $('#fibo').tooltipster({
       animation: 'grow',
       content: $("<span><b>Infinite Adder</b></br>This is a fun little program that increases a starting number, which is chosen by the user, constantly by an increment also chosen by the user. If you pick a regular increment, this can be used as a timer of sorts or a test of your calculator's computing abilities. Also, picking irrational increments yields some interesting results.</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download) </span>"),
@@ -98,9 +100,8 @@ $(document).ready(function() {
       offsetY: 50,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
   $('#ack').tooltipster({
       animation: 'grow',
       content: $("<span><b>Snake Game</b></br>My friend made this program but I thought it was interesting enough to share. It is a remix of the classic snake game. You are the snake in a field that is littered with rocks, and you cannot hit any rocks. However, as you move, you get longer and longer and you cannot hit yourself. See how long you can last; it even stores a high score based on the number of pixels you covered. </br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download)</span>"),
@@ -111,9 +112,9 @@ $(document).ready(function() {
       offsetY: 50,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#vecadd').tooltipster({
       animation: 'grow',
       content: $("<span><b>Vector Addition</b></br>This is a program I made that takes the magnitude and angle of two vectors and returns the resultant vector in unit vector notation and with its magnitude and angle. The input takes the angle as an absolute 360-degree angle, but returns it in relation to NE, NW, SE, SW distinguishable by the unit vector notation signs. </br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download)</span>"),
@@ -124,9 +125,9 @@ $(document).ready(function() {
       offsetY: 50,
       arrow: false,
   });
-});
 
-$(document).ready(function() {
+
+
   $('#kin').tooltipster({
       animation: 'grow',
       content: $("<span><b>Kinematic Solver</b></br>Give at least 3 out of the 5 Kinematic Variables, this program will solve for the missing one or two variables using the Kinematic equations. The 5 Kinematic Variables are initial velocity (VO), final velocity (VF), Acceleration (A), Time (T), and Displacement (X).</br><b>Requires: </b>Texas Instruments Calculator (.8xp) (Click button to download)</span>"),
@@ -138,7 +139,7 @@ $(document).ready(function() {
       arrow: false,
   });
 }
-});
+}
 </script>
 </head>
 <body id = "programs">
