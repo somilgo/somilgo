@@ -154,6 +154,17 @@ function update() {
       offsetY: 90,
       arrow: false,
   });
+
+  $('#grav').tooltipster({
+      animation: 'grow',
+      content: $("<span><b>Gravity Simulator</b></br> Learning about gravity and Newton's Second Law in my Newtonian Mechanics class in High School got me thinking about computational physics and simulating physical processes. This simulator takes an iterative approach on Netwon's gravitational force formula by taking the forces of gravity present in each frame and finding the resulant acceleration on each object. The simulation is preset with two objects (one orbitting around the other), but more objects can be added in through the source code. Hopefully, this is a premise for more physics simulations to come. </br><b>Requires: </b>Python 2 (for .py file) and Pygame(Click button to download) </span>"),
+      position: 'right',
+      theme: 'dope',
+      interactive: true,
+      maxWidth: 500,
+      offsetY: 90,
+      arrow: false,
+  });
 }
 }
 
@@ -173,6 +184,7 @@ function update() {
       <a href="Fibonacci.zip"><li id="fibo">Fibonacci Sequence</li></a>
       <a href="Ackermann.zip"><li id="ack">Ackermann Function</li></a>
       <a href="triangle_puzzle.zip"><li id="sirp">Sierpinski's Triangle</li></a>
+      <a href="gravity.py"><li id="grav">Gravity Simulator</li></a>
       
       
     </ul>
